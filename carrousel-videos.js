@@ -1,7 +1,11 @@
-const currentScriptCarrouselVideos = document.currentScript;
-const idVideo1 = currentScriptCarrouselVideos.getAttribute('data-id1');
-const idVideo2 = currentScriptCarrouselVideos.getAttribute('data-id2');
-const idVideo3 = currentScriptCarrouselVideos.getAttribute('data-id3');
+
+
+
+
+
+const idVideo1 = document.currentScript.getAttribute('data-id1');
+const idVideo2 = document.currentScript.getAttribute('data-id2');
+const idVideo3 = document.currentScript.getAttribute('data-id3');
 
 console.log(idVideo1);
 console.log(idVideo2);
