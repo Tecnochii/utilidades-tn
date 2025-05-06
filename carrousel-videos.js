@@ -1,4 +1,5 @@
 
+console.log("carrousel-videos.js");
 
 
 
@@ -10,6 +11,8 @@ const idVideo3 = document.currentScript.getAttribute('data-id3');
 console.log(idVideo1);
 console.log(idVideo2);
 console.log(idVideo3);
+
+
 
 // Estilos generados dinámicamente
     const styleCarrousel = document.createElement('style');
