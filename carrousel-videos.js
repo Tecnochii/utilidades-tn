@@ -3,6 +3,9 @@ const idVideo1 = currentScriptCarrouselVideos.getAttribute('data-id1');
 const idVideo2 = currentScriptCarrouselVideos.getAttribute('data-id2');
 const idVideo3 = currentScriptCarrouselVideos.getAttribute('data-id3');
 
+console.log(idVideo1);
+console.log(idVideo2);
+console.log(idVideo3);
 
 // Estilos generados dinámicamente
     const styleCarrousel = document.createElement('style');
