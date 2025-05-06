@@ -42,6 +42,7 @@ console.log(idVideo3);
     ];
 
     const containerVideosCarrousel = document.getElementById('product_form').parentNode;
+    containerVideosCarrousel.id = "videoContainer";
 
     driveLinks.forEach(id => {
       const iframe = document.createElement('iframe');
