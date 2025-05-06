@@ -10,15 +10,7 @@ console.log(idVideo3);
 // Estilos generados dinámicamente
     const styleCarrousel = document.createElement('style');
     styleCarrousel.innerHTML = `
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0; /* Color de fondo */
-      }
+  
       #videoContainer {
         display: flex;
         overflow-x: auto;
