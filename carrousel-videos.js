@@ -5,8 +5,8 @@ const idVideo3 = currentScriptCarrouselVideos.getAttribute('data-id3');
 
 
 // Estilos generados dinámicamente
-    const style = document.createElement('style');
-    style.innerHTML = `
+    const styleCarrousel = document.createElement('style');
+    styleCarrousel.innerHTML = `
       body {
         margin: 0;
         padding: 0;
