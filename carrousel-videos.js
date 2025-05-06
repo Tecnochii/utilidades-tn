@@ -42,12 +42,19 @@ console.log(idVideo3);
     ];
 
     const containerVideosCarrousel = document.getElementById('product_form').parentNode;
-    containerVideosCarrousel.id = "videoContainer";
+
+    let containerVideos = document.createElement('div');
+    containerVideos.id = "videoContainer";
+
+
+    
 
     driveLinks.forEach(id => {
       const iframe = document.createElement('iframe');
       iframe.src = `https://drive.google.com/file/d/${id}/preview`; // Agrega autoplay y mute
       iframe.frameBorder = "0";
       iframe.allowFullscreen = true;
-      containerVideosCarrousel.appendChild(iframe);
+      containerVideos.appendChild(iframe);
     });
+
+    containerVideosCarrousel.appendChild(containerVideos);
