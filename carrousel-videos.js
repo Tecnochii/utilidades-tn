@@ -31,7 +31,7 @@ const idVideo3 = currentScriptCarrouselVideos.getAttribute('data-id3');
         background-color: black; /* Fondo negro para el video */
       }
     `;
-    document.head.appendChild(style);
+    document.head.appendChild(styleCarrousel);
 
     const driveLinks = [
         idVideo1,
