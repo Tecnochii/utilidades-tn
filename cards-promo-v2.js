@@ -1,5 +1,5 @@
   // Estilos de animación
-  const style = document.createElement('style');
+  const styleAnimacionPromo = document.createElement('style');
   style.textContent = `
     @keyframes fadeInUp {
       0% {
@@ -17,7 +17,7 @@
       opacity: 0; /* Inicialmente oculto */
     }
   `;
-  document.head.appendChild(style);
+  document.head.appendChild(styleAnimacionPromo);
 
   const cards = JSON.parse(document.currentScript.getAttribute('data-cards'));
 
