@@ -66,22 +66,20 @@
             month = "Abril"
         }
       else if(month == 5){
-            month = "Abril"
-        }else if(month == 6){
             month = "Mayo"
-        }else if(month == 7){
+        }else if(month == 6){
             month = "Junio"
-        }else if(month == 8){
+        }else if(month == 7){
             month = "Julio"
-        }else if(month == 9){
+        }else if(month == 8){
             month = "Agosto"
-        }else if(month == 10){
+        }else if(month == 9){
             month = "Septiembre"
-        }else if(month == 11){
+        }else if(month == 10){
             month = "Octubre"
-        }else if(month == 12){
+        }else if(month == 11){
             month = "Noviembre"
-        }else if(month == 0){
+        }else if(month == 12){
             month = "Diciembre"
         }
 
