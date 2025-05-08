@@ -72,6 +72,7 @@ document.head.appendChild(styleBundles);
 
 
 const containerBundlle = document.getElementById('price-container');
+console.log(containerBundlle);
 
 
 
