@@ -1,3 +1,9 @@
+const colorBorder = ocument.currentScript.getAttribute('data-color-border');
+
+const colortDiscount = document.currentScript.getAttribute('data-color-discount');
+
+const backgroundLabelColor = document.currentScript.getAttribute('data-background-label-color');
+
 const styleBundles = document.createElement('style');
 styleBundles.textContent = `
   .emapps-discount-radio-group {
@@ -30,7 +36,7 @@ styleBundles.textContent = `
     margin-right: 10px;
   }
   .emapps-discount-radio-group-list-item-active {
-    border: 2px solid #8c52ff;
+    border: 2px solid ${colorBorder ? colorBorder : '#8c52ff'};
     box-shadow: 0 0 0 3px rgba(0, 200, 83, 0.2);
   }
   .emapps-discount-radio-group-list-item-qty-info-unit {
@@ -43,7 +49,7 @@ styleBundles.textContent = `
   .emapps-discount-radio-group-list-item-qty-price-de {
     text-decoration: line-through;
     font-size: 0.85em;
-    color: #8c52ff;
+    color: ${colortDiscount ? colortDiscount : '#8c52ff'};
   }
   .emapps-discount-radio-group-list-item-qty-price-por {
     font-weight: bold;
@@ -53,7 +59,7 @@ styleBundles.textContent = `
     position: absolute;
     top: -10px;
     right: 10px;
-    background: #8c52ff;
+    background: ${backgroundLabelColor ? backgroundLabelColor : '#8c52ff'};
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
@@ -102,7 +108,7 @@ discounts.forEach((discount, index) => {
   const qtyInfo = document.createElement('div');
   const unit = document.createElement('div');
   unit.className = 'emapps-discount-radio-group-list-item-qty-info-unit';
-  unit.textContent = `${discount.quantity} Unidad${discount.quantity > 1 ? 'es' : ''}`;
+  unit.textContent = `${discount.name ? discount.name : discount.quantity + " " +"Unidad" + discount.quantity > 1 ? 'es' : ''}`;
   const percent = document.createElement('div');
   percent.className = 'emapps-discount-radio-group-list-item-qty-info-percent';
   percent.textContent = `Ahorra ${discount.percent}%`;
