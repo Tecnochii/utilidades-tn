@@ -54,7 +54,8 @@
 
 
 
-
+      console.log(month);
+      
 
         if(month == 1){
             month = "Enero"
