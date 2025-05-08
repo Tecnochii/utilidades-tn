@@ -65,7 +65,7 @@ document.head.appendChild(styleBundles);
 
 
 
-const containerBundlle = document.getElementById('product_form');
+const containerBundlle = document.getElementById('price-container');
 
 
 
