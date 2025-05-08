@@ -56,24 +56,32 @@
 
 
 
-
-        if(month == 4){
+        if(month == 1){
+            month = "Enero"
+        }else if(month == 2){
+            month = "Febrero"
+        }else if(month == 3){
+            month = "Marzo"
+        }else if(month == 4){
             month = "Abril"
-        }else if(month == 5){
-            month = "Mayo"
+        }
+      else if(month == 5){
+            month = "Abril"
         }else if(month == 6){
-            month = "Junio"
+            month = "Mayo"
         }else if(month == 7){
-            month = "Julio"
+            month = "Junio"
         }else if(month == 8){
-            month = "Agosto"
+            month = "Julio"
         }else if(month == 9){
-            month = "Septiembre"
+            month = "Agosto"
         }else if(month == 10){
-            month = "Octubre"
+            month = "Septiembre"
         }else if(month == 11){
-            month = "Noviembre"
+            month = "Octubre"
         }else if(month == 12){
+            month = "Noviembre"
+        }else if(month == 0){
             month = "Diciembre"
         }
 
