@@ -71,8 +71,7 @@ document.head.appendChild(styleBundles);
 
 
 
-const containerBundlle = document.getElementById('price-container');
-console.log(containerBundlle);
+const containerBundle = document.getElementsByClassName('price-container')[0];
 
 
 
@@ -81,6 +80,7 @@ const discounts = JSON.parse(document.currentScript.getAttribute('data-discounts
 
 
 console.log(discounts);
+console.log(containerBundle);
 
 // Generador
 
@@ -157,4 +157,4 @@ console.log( item.firstChild.value);
 });
 
 wrapper.appendChild(list);
-containerBundlle.appendChild(wrapper);
+containerBundle.appendChild(wrapper);
