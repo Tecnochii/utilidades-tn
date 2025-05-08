@@ -1,6 +1,6 @@
   // Estilos de animación
   const styleAnimacionPromo = document.createElement('style');
-  style.textContent = `
+  styleAnimacionPromo.textContent = `
     @keyframes fadeInUp {
       0% {
         opacity: 0;
