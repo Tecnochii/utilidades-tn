@@ -1,4 +1,4 @@
-const colorBorder = ocument.currentScript.getAttribute('data-color-border');
+const colorBorder = document.currentScript.getAttribute('data-color-border');
 
 const colortDiscount = document.currentScript.getAttribute('data-color-discount');
 
