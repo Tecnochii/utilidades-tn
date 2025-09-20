@@ -108,7 +108,7 @@ const loadUpsellingProducts = () => {
     border: 1px solid;
     position: relative;
     top: -12rem;
-    left: 3rem;"/>
+    left: 5rem;"/>
 
 <div class="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled" style="display: none;" data-prev-visibility="block">
 
