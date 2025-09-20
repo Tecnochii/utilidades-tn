@@ -13,7 +13,7 @@ const productsToUpssell = document.currentScript.getAttribute(
 
 
 const loadUpsellingProducts = () => {
-  const products = productsToUpssell; // Crear el título
+  const products = JSON.parse(productsToUpssell) // Crear el título
 
   const title = document.createElement("h2");
 
