@@ -2,7 +2,7 @@ const productsToUpssell = document.currentScript.getAttribute(
   "data-prducts-to-upssell"
 );
 
-
+const dataTitle = document.currentScript.getAttribute('data-title');
 
 
 
@@ -17,7 +17,7 @@ const loadUpsellingProducts = () => {
 
   const title = document.createElement("h2");
 
-  title.textContent = "Te puede interesar";
+  title.textContent = dataTitle ? dataTitle :  "Te puede interesar";
 
   let firstChildCartList =
     document.getElementsByClassName("subtotal-price ")[0];
