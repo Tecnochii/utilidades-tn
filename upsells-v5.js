@@ -107,8 +107,8 @@ const loadUpsellingProducts = () => {
     background-color:#ffffff;
     border: 1px solid;
     position: relative;
-    top: -12rem;
-    left: 5rem;"/>
+    top: -11rem;
+    left: 2rem;"/>
 
 <div class="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled" style="display: none;" data-prev-visibility="block">
 
