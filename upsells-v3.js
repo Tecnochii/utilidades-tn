@@ -62,17 +62,17 @@ const loadUpsellingProducts = () => {
 
     card.innerHTML = `
 
-        <img src="${product.img}" alt="${product.name}">
+<img src="${product.img}" alt="${product.name}">
 
-        <div class="product-name">${product.name}</div>
+ <div class="product-name">${product.name}</div>
 
-        <div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
+<div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
 
-        <div class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
+<div class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
 
-        <div class="discount">${product.discount}</div>
+<div class="discount">${product.discount}</div>
 
-        <form id="product_form" class="js-product-form mt-4" action="/comprar/" method="post" data-store="product-form-${
+ <form id="product_form" class="js-product-form mt-4" action="/comprar/" method="post" data-store="product-form-${
       product.idProducto
     }"><input name="add_to_cart" type="hidden" value="${product.idProducto}" />
 
@@ -96,13 +96,21 @@ const loadUpsellingProducts = () => {
 
 <div class="col-8 col-md-9" style="
 
-    display: flex;
+ display: flex;
 
-    justify-content: center;
+ justify-content: center;
 
-"><input class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell"  type="submit" value="+" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block"  style="width: 5rem;border-radius: 50%; font-size: 2rem;"/>
+"><input class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="+" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block" style="    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: green;
+    background-color:#ffffff;
+    border: 1px solid;
+    position: relative;
+    top: -12rem;
+    left: 3rem;"/>
 
-<div class="js-addtocart js-addtocart-placeholder btn  btn-primary btn-block btn-transition btn-big disabled" style="display: none;" data-prev-visibility="block">
+<div class="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled" style="display: none;" data-prev-visibility="block">
 
 <div class="d-inline-block"><span class="js-addtocart-text" style="display: inline;" data-prev-visibility="inline"> + </span> <span class="js-addtocart-success transition-container"> &iexcl;Listo! </span>
 
@@ -124,7 +132,7 @@ const loadUpsellingProducts = () => {
 
 </form>
 
-      `;
+`;
 
     container.appendChild(card);
   }); // Lógica para flechas
