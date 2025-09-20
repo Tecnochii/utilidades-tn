@@ -62,9 +62,10 @@ const loadUpsellingProducts = () => {
 
     card.innerHTML = `
 
-<img src="${product.img}" alt="${product.name}">
+    
+<a href="${product.url}"> <img src="${product.img}" alt="${product.name}"></a>
 
- <div class="product-name">${product.name}</div>
+ <a href="${product.url}"><div class="product-name">${product.name}</div></a>
 
 <div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
 
