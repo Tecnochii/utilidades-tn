@@ -185,8 +185,11 @@ console.log(Array.from(add_to_cartbtns));
 btn.addEventListener("click", () => {
   setTimeout(() => {
     let campoPersonalizado = document.getElementById("campo-personalizado--root")
-
+    console.log(campoPersonalizado);
+    
     if(campoPersonalizado){
+
+
       campoPersonalizado.style.display = "none";
     }
 
