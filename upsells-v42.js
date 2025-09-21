@@ -111,7 +111,7 @@ margin-left: ${marginLeftProductDiscount ? marginLeftProductDiscount : "0px"};
 border-radius: ${borderRadiusProductDiscount ? borderRadiusProductDiscount : "6px"};
 padding: ${paddingProductDiscount ? paddingProductDiscount : "0.18rem"};
 background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e3ff"};
-" class="discount"><p>${product.discount}</p></div>
+" class="discount">${product.discount}</div>
 </div>
 
 ${dataEnvioText ? ` <div style="display: flex;">
