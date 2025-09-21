@@ -8,8 +8,22 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
 const delayCarga = parseInt(document.currentScript.getAttribute('data-delay-carga'));
 
+const colorOldPrice = document.currentScript.getAttribute('data-old-price-color');
+const newPriceColor = document.currentScript.getAttribute('data-new-price-color');
+const priceDataFontSize = document.currentScript.getAttribute('data-price-font-size');
+const borderRadiusProductDiscount = document.currentScript.getAttribute('data-border-radius-product-discount');
+const paddingProductDiscount = document.currentScript.getAttribute('data-padding-product-discount');
+const backgroundProductDiscount = document.currentScript.getAttribute('data-background-product-discount');
+const plusAddFontSize = document.currentScript.getAttribute('data-plus-add-font-size');
+const plusAddX = document.currentScript.getAttribute('data-plus-add-x'); // plusAddX
+const plusAddY = document.currentScript.getAttribute('data-plus-add-y');
+const plusAddBorder = document.currentScript.getAttribute('data-plus-add-border');
+const plusAddBackgroundColor = document.currentScript.getAttribute('data-plus-add-background-color');
+const plusAddColor = document.currentScript.getAttribute('data-plus-add-color');
+const plusAddBorderRadius = document.currentScript.getAttribute('data-plus-add-border-radius');
+const plusAddHeight = document.currentScript.getAttribute('data-plus-add-height');
+const plusAddWidth = document.currentScript.getAttribute('data-plus-add-width');
 
-    
 
     console.log(JSON.parse(productsToUpssell));
     
@@ -87,7 +101,7 @@ const loadUpsellingProducts = () => {
  
  <div style="display: flex;">
 <div class="price-new" style="
-color: black;
+color: ${newPriceColor ? newPriceColor : "black"};
  font-size:${priceDataFontSize ? priceDataFontSize : "1rem"};">$ ${product.newPrice.toLocaleString()}</div>
 <div style="
 margin-left: 10px;
