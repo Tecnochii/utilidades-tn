@@ -105,13 +105,13 @@ const loadUpsellingProducts = () => {
  <div style="display: flex;">
 <div class="price-new" style="
 color: ${newPriceColor ? newPriceColor : "black"};
- font-size:${priceDataFontSize ? priceDataFontSize : "1rem"};">$ ${product.newPrice.toLocaleString()}</div>
+ font-size:${priceDataFontSize ? priceDataFontSize : "1.5rem"};">$ ${product.newPrice.toLocaleString()}</div>
 <div style="
 margin-left: ${marginLeftProductDiscount ? marginLeftProductDiscount : "0px"};
 border-radius: ${borderRadiusProductDiscount ? borderRadiusProductDiscount : "6px"};
 padding: ${paddingProductDiscount ? paddingProductDiscount : "0.18rem"};
 background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e3ff"};
-" class="discount">${product.discount}</div>
+" class="discount"><p>${product.discount}</p></div>
 </div>
 
 ${dataEnvioText ? ` <div style="display: flex;">
