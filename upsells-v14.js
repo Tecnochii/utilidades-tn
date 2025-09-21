@@ -113,7 +113,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
  justify-content: center;
 
-"><input class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="+" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block"
+"><input class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block"
  style="    width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -122,7 +122,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
     border: 1px solid;
     position: relative;
     top: -11rem;
-    left: 3rem;"/>
+    left: 3rem;">+</input>
 
 <div class="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled" style="display: none;" data-prev-visibility="block">
 
