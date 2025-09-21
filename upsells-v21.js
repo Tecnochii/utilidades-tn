@@ -17,8 +17,12 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
     if(campoPersonalizado){
 
     console.log("Campo en encontrado",campoPersonalizado);
-
+    
       
+      
+    let product_form = document.getElementById("product_form")
+      product_form.appendChild(campoPersonalizado)
+    campoPersonalizado.parentNode.removeChild(campoPersonalizado)
     }
 
 
