@@ -10,6 +10,8 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
     console.log(JSON.parse(productsToUpssell));
     
+  setTimeout(() => {
+    
     let campoPersonalizado = document.getElementById("campo-personalizado--root")
     
     if(campoPersonalizado){
@@ -19,6 +21,9 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
       
     }
 
+
+
+  }, 2000);
 
 const loadUpsellingProducts = () => {
   const products = JSON.parse(productsToUpssell) // Crear el título
