@@ -1,5 +1,5 @@
 
-const loadBundles = ()=>{
+
 const colorBorder = document.currentScript.getAttribute('data-color-border');
 
 const colortDiscount = document.currentScript.getAttribute('data-color-discount');
@@ -7,6 +7,9 @@ const colortDiscount = document.currentScript.getAttribute('data-color-discount'
 const backgroundLabelColor = document.currentScript.getAttribute('data-background-label-color');
 
 const bundleTitle = document.currentScript.getAttribute('data-bundle-title');
+
+const loadBundles = ()=>{
+
 
 
 
