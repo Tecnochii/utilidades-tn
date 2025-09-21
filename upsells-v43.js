@@ -102,7 +102,7 @@ const loadUpsellingProducts = () => {
     <div></div>
     </div>
  
- <div style="display: flex;">
+ <div style="display: flex; align-items: center;">
 <div class="price-new" style="
 color: ${newPriceColor ? newPriceColor : "black"};
  font-size:${priceDataFontSize ? priceDataFontSize : "1.5rem"};">$ ${product.newPrice.toLocaleString()}</div>
