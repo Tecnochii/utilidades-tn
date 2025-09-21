@@ -86,7 +86,7 @@ const loadUpsellingProducts = () => {
     card.innerHTML = `
 
     
-<a href="${product.url}" > <img src="${product.img}" style="border-radius: ${imgBorderRadius ? imgBorderRadius : "2px"};" alt="${product.name}"></a>
+<a href="${product.url}" > <img src="${product.img}" style="border-radius: ${imgBorderRadius ? imgBorderRadius : "10px"};" alt="${product.name}"></a>
 
 
 
@@ -110,7 +110,7 @@ color: ${newPriceColor ? newPriceColor : "black"};
 margin-left: ${marginLeftProductDiscount ? marginLeftProductDiscount : "0px"};
 border-radius: ${borderRadiusProductDiscount ? borderRadiusProductDiscount : "6px"};
 padding: ${paddingProductDiscount ? paddingProductDiscount : "0.18rem"};
-background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e31d"};
+background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e3ff"};
 " class="discount">${product.discount}</div>
 </div>
 
@@ -155,7 +155,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
     height: ${plusAddHeight ? plusAddHeight : "3rem"};
     border-radius: ${plusAddBorderRadius ? plusAddBorderRadius : "50%"};
     color: ${plusAddColor ? plusAddColor : "green"};
-    background-color:${plusAddBackgroundColor ? plusAddBackgroundColor : "#ffffff"};
+    background-color:${plusAddBackgroundColor ? plusAddBackgroundColor : "#ffffff3a"};
     border: ${plusAddBorder ? plusAddBorder : "1px solid"};
     position: relative;
     top: ${plusAddY ? plusAddY : "-11rem"};
