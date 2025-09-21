@@ -4,7 +4,7 @@ const productsToUpssell = document.currentScript.getAttribute(
 
 const dataTitle = document.currentScript.getAttribute('data-title');
 
-
+const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
     
 
@@ -67,11 +67,17 @@ const loadUpsellingProducts = () => {
 
  <a href="${product.url}"><div class="product-name">${product.name}</div></a>
 
+
+
+ <div style="color: red;" class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
+ <div style="display: flex;">
 <div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
+<div style="margin-left: 10px; border: 1px solid green;" class="discount">${product.discount}</div>
+</div>
 
-<div class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
+${dataEnvioText ? `<div class="envio-text">${dataEnvioText}</div>` : ""}
 
-<div class="discount">${product.discount}</div>
+
 
  <form id="product_form" class="js-product-form mt-4" action="/comprar/" method="post" data-store="product-form-${
       product.idProducto
