@@ -18,7 +18,7 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
     console.log("Campo en encontrado",campoPersonalizado);
     
-      let productForms = document.getElementsByClassName("js-product-form")[0]
+      let productForms = document.getElementsByClassName("js-product-form")[-1]
       console.log(productForms);
       
       productForms.appendChild(campoPersonalizado)
