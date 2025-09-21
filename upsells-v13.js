@@ -75,7 +75,7 @@ const loadUpsellingProducts = () => {
  
  <div style="display: flex;">
 <div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
-<div style="margin-left: 10px; border: 1px solid green; border-radius: 5%; padding: 0.18rem;" class="discount">${product.discount}</div>
+<div style="margin-left: 10px;border: 2px solid #3ab33a;border-radius: 6px;padding: 0.18rem;background-color: #e3f7e3;" class="discount">${product.discount}</div>
 </div>
 
 ${dataEnvioText ? ` <div style="display: flex;">
@@ -113,7 +113,8 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
  justify-content: center;
 
-"><input class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="+" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block" style="    width: 3rem;
+"><input class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="+" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block"
+ style="    width: 3rem;
     height: 3rem;
     border-radius: 50%;
     color: green;
