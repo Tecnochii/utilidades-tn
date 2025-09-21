@@ -21,7 +21,7 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
       
       
     let product_form = document.getElementById("product_form")
-      product_form.appendChild(campoPersonalizado)
+      product_form.appendChild({...campoPersonalizado})
     campoPersonalizado.parentNode.removeChild(campoPersonalizado)
     }
 
