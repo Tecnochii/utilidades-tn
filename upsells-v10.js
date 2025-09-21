@@ -78,7 +78,7 @@ const loadUpsellingProducts = () => {
 <div style="margin-left: 10px; border: 1px solid green;" class="discount">${product.discount}</div>
 </div>
 
-${dataEnvioText ? ` <div display="flex">
+${dataEnvioText ? ` <div style="display: flex;">
   <div style="color:green;" class="envio-text">${dataEnvioText}</div>
   <div></div> 
   </div>  ` : ""}
