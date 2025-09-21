@@ -23,6 +23,9 @@ const plusAddColor = document.currentScript.getAttribute('data-plus-add-color');
 const plusAddBorderRadius = document.currentScript.getAttribute('data-plus-add-border-radius');
 const plusAddHeight = document.currentScript.getAttribute('data-plus-add-height');
 const plusAddWidth = document.currentScript.getAttribute('data-plus-add-width');
+const imgBorderRadius = document.currentScript.getAttribute('data-img-border-radius');
+const marginLeftProductDiscount = document.currentScript.getAttribute('data-margin-left-product-discount');
+
 
 
     console.log(JSON.parse(productsToUpssell));
@@ -83,7 +86,7 @@ const loadUpsellingProducts = () => {
     card.innerHTML = `
 
     
-<a href="${product.url}"> <img src="${product.img}" alt="${product.name}"></a>
+<a href="${product.url}" style="border-radius: ${imgBorderRadius ? imgBorderRadius : "2px"};"> <img src="${product.img}" alt="${product.name}"></a>
 
 
 
@@ -104,7 +107,7 @@ const loadUpsellingProducts = () => {
 color: ${newPriceColor ? newPriceColor : "black"};
  font-size:${priceDataFontSize ? priceDataFontSize : "1rem"};">$ ${product.newPrice.toLocaleString()}</div>
 <div style="
-margin-left: 10px;
+margin-left: ${marginLeftProductDiscount ? marginLeftProductDiscount : "0px"};
 border-radius: ${borderRadiusProductDiscount ? borderRadiusProductDiscount : "6px"};
 padding: ${paddingProductDiscount ? paddingProductDiscount : "0.18rem"};
 background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e3"};
