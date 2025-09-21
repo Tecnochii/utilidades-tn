@@ -6,7 +6,7 @@ const dataTitle = document.currentScript.getAttribute('data-title');
 
 const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
-const delayCarga = document.currentScript.getAttribute('data-delay-carga');
+const delayCarga = parseInt(document.currentScript.getAttribute('data-delay-carga'));
 
 
     
@@ -71,22 +71,35 @@ const loadUpsellingProducts = () => {
     
 <a href="${product.url}"> <img src="${product.img}" alt="${product.name}"></a>
 
- <a href="${product.url}"><div class="product-name">${product.name}</div></a>
+
+
+<div style="display: flex;">
+
+<a href="${product.url}"><div class="product-name">${product.name}</div></a>
+<div></div>
+</div>
 
 
     <div style="display: flex;">
-    <div style="color: red;" class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
+    <div style="color: ${colorOldPrice ? colorOldPrice : "red"};" class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
     <div></div>
     </div>
  
  <div style="display: flex;">
-<div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
-<div style="margin-left: 10px;border: 2px solid #3ab33a;border-radius: 6px;padding: 0.18rem;background-color: #e3f7e3;" class="discount">${product.discount}</div>
+<div class="price-new" style="
+color: black;
+ font-size:${priceDataFontSize ? priceDataFontSize : "1rem"};">$ ${product.newPrice.toLocaleString()}</div>
+<div style="
+margin-left: 10px;
+border-radius: ${borderRadiusProductDiscount ? borderRadiusProductDiscount : "6px"};
+padding: ${paddingProductDiscount ? paddingProductDiscount : "0.18rem"};
+background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e3"};
+" class="discount">${product.discount}</div>
 </div>
 
 ${dataEnvioText ? ` <div style="display: flex;">
   <div style="color:green;" class="envio-text">${dataEnvioText}</div>
-  <div></div> 
+  
   </div>  ` : ""}
 
 
@@ -121,16 +134,16 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 "><button class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block"
  style="    
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    color: green;
-    background-color:#ffffff;
-    border: 1px solid;
+    width: ${plusAddWidth ? plusAddWidth : "3rem"};
+    height: ${plusAddHeight ? plusAddHeight : "3rem"};
+    border-radius: ${plusAddBorderRadius ? plusAddBorderRadius : "50%"};
+    color: ${plusAddColor ? plusAddColor : "green"};
+    background-color:${plusAddBackgroundColor ? plusAddBackgroundColor : "#ffffff"};
+    border: ${plusAddBorder ? plusAddBorder : "1px solid"};
     position: relative;
-    top: -11rem;
-    left: 3rem;
-    font-size: 35px;
+    top: ${plusAddY ? plusAddY : "-11rem"};
+    left: ${plusAddX ? plusAddX : "3rem"};
+    font-size: ${plusAddFontSize ? plusAddFontSize : "35px"};
     text-align: center;
     display: flex;
     justify-content: center;
