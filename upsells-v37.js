@@ -86,7 +86,7 @@ const loadUpsellingProducts = () => {
     card.innerHTML = `
 
     
-<a href="${product.url}" style="border-radius: ${imgBorderRadius ? imgBorderRadius : "2px"};"> <img src="${product.img}" alt="${product.name}"></a>
+<a href="${product.url}" > <img src="${product.img}" style="border-radius: ${imgBorderRadius ? imgBorderRadius : "2px"};" alt="${product.name}"></a>
 
 
 
@@ -110,7 +110,7 @@ color: ${newPriceColor ? newPriceColor : "black"};
 margin-left: ${marginLeftProductDiscount ? marginLeftProductDiscount : "0px"};
 border-radius: ${borderRadiusProductDiscount ? borderRadiusProductDiscount : "6px"};
 padding: ${paddingProductDiscount ? paddingProductDiscount : "0.18rem"};
-background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e3"};
+background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e31d"};
 " class="discount">${product.discount}</div>
 </div>
 
