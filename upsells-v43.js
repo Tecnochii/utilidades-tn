@@ -109,7 +109,7 @@ color: ${newPriceColor ? newPriceColor : "black"};
 <div style="
 margin-left: ${marginLeftProductDiscount ? marginLeftProductDiscount : "0px"};
 border-radius: ${borderRadiusProductDiscount ? borderRadiusProductDiscount : "6px"};
-padding: ${paddingProductDiscount ? paddingProductDiscount : "0.18rem"};
+padding: ${paddingProductDiscount ? paddingProductDiscount : "0.30rem"};
 background-color: ${backgroundProductDiscount ? backgroundProductDiscount : "#e3f7e3ff"};
 " class="discount">${product.discount}</div>
 </div>
