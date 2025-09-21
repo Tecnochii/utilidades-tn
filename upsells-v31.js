@@ -15,7 +15,7 @@ const loadUpsellingProducts = () => {
   const products = JSON.parse(productsToUpssell) // Crear el título
 
 
-productForm.appendChild(inputFileFoto)
+
 
   
   const title = document.createElement("h2");
@@ -88,7 +88,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 
 
- <form id="product_form_in_cart" class="js-product-form mt-4" action="/comprar/" method="post" data-store="product-form-${
+ <form id="product_form" class="js-product-form mt-4" action="/comprar/" method="post" data-store="product-form-${
       product.idProducto
     }"><input name="add_to_cart" type="hidden" value="${product.idProducto}" />
 
