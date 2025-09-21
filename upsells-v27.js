@@ -10,25 +10,7 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
     console.log(JSON.parse(productsToUpssell));
     
-  setTimeout(() => {
-    
-    let campoPersonalizado = document.getElementById("campo-personalizado--root")
-    
-    if(campoPersonalizado){
-
-    console.log("Campo en encontrado",campoPersonalizado);
-    
-      let productForms = document.getElementsByClassName("js-product-form")[-1]
-      console.log(productForms);
-      
-      productForms.appendChild(campoPersonalizado)
-    // campoPersonalizado.parentNode.removeChild(campoPersonalizado)
-    }
-
-
-
-  }, 2000);
-
+ 
 const loadUpsellingProducts = () => {
   const products = JSON.parse(productsToUpssell) // Crear el título
 
