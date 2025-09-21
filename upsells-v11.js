@@ -75,7 +75,7 @@ const loadUpsellingProducts = () => {
  
  <div style="display: flex;">
 <div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
-<div style="margin-left: 10px; border: 1px solid green;" class="discount">${product.discount}</div>
+<div style="margin-left: 10px; border: 1px solid green; border-radius: 5%; padding: 0.18rem;" class="discount">${product.discount}</div>
 </div>
 
 ${dataEnvioText ? ` <div style="display: flex;">
