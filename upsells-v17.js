@@ -184,6 +184,13 @@ console.log(Array.from(add_to_cartbtns));
 
 btn.addEventListener("click", () => {
   setTimeout(() => {
+    let campoPersonalizado = document.getElementById("campo-personalizado--root")
+
+    if(campoPersonalizado){
+      campoPersonalizado.style.display = "none";
+    }
+
+
     loadUpsellingProducts();
   }, 1000);
 });
