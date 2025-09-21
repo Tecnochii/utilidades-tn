@@ -27,7 +27,7 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
 
 
-  }, 1000);
+  }, 2000);
 
 const loadUpsellingProducts = () => {
   const products = JSON.parse(productsToUpssell) // Crear el título
