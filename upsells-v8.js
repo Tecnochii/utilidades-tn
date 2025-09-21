@@ -68,8 +68,11 @@ const loadUpsellingProducts = () => {
  <a href="${product.url}"><div class="product-name">${product.name}</div></a>
 
 
-
- <div style="color: red;" class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
+    <div style="display: flex;">
+    <div style="color: red;" class="price-old">$ ${product.oldPrice.toLocaleString()}</div>
+    <div></div>
+    </div>
+ 
  <div style="display: flex;">
 <div class="price-new">$ ${product.newPrice.toLocaleString()}</div>
 <div style="margin-left: 10px; border: 1px solid green;" class="discount">${product.discount}</div>
