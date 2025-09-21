@@ -21,13 +21,13 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
       
       
     let product_form = document.getElementById("product_form")
-      product_form.appendChild({...campoPersonalizado})
-    campoPersonalizado.parentNode.removeChild(campoPersonalizado)
+      product_form.appendChild(campoPersonalizado)
+    // campoPersonalizado.parentNode.removeChild(campoPersonalizado)
     }
 
 
 
-  }, 2000);
+  }, 1000);
 
 const loadUpsellingProducts = () => {
   const products = JSON.parse(productsToUpssell) // Crear el título
