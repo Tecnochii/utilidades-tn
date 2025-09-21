@@ -10,6 +10,14 @@ const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
     console.log(JSON.parse(productsToUpssell));
     
+    let campoPersonalizado = document.getElementById("campo-personalizado--root")
+    
+    if(campoPersonalizado){
+
+    console.log("Campo en encontrado",campoPersonalizado);
+
+      
+    }
 
 
 const loadUpsellingProducts = () => {
@@ -178,25 +186,10 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 loadUpsellingProducts();
 
-let add_to_cartbtns = document.getElementsByClassName("js-prod-submit-form");
-
-console.log(Array.from(add_to_cartbtns));
-
-btn.addEventListener("click", () => {
-  setTimeout(() => {
-    let campoPersonalizado = document.getElementById("campo-personalizado--root")
-    console.log(campoPersonalizado);
-    
-    if(campoPersonalizado){
 
 
-      campoPersonalizado.style.display = "none";
-    }
 
 
-    loadUpsellingProducts();
-  }, 1000);
-});
 
 
 
