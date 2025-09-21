@@ -6,6 +6,9 @@ const dataTitle = document.currentScript.getAttribute('data-title');
 
 const dataEnvioText = document.currentScript.getAttribute('data-envio-text');
 
+const delayCarga = document.currentScript.getAttribute('data-delay-carga');
+
+
     
 
     console.log(JSON.parse(productsToUpssell));
@@ -181,7 +184,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 setTimeout(() => {
   loadUpsellingProducts();
-}, 4500);
+}, delayCarga);
 
 
 
