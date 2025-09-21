@@ -121,7 +121,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
     border: 1px solid;
     position: relative;
     top: -11rem;
-    left: 2rem;"/>
+    left: 3rem;"/>
 
 <div class="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled" style="display: none;" data-prev-visibility="block">
 
