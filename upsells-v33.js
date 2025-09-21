@@ -184,7 +184,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 setTimeout(() => {
   loadUpsellingProducts();
-}, delayCarga);
+}, delayCarga ? delayCarga * 1000 : 0);
 
 
 
