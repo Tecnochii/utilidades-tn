@@ -1,3 +1,5 @@
+
+const loadBundles = ()=>{
 const colorBorder = document.currentScript.getAttribute('data-color-border');
 
 const colortDiscount = document.currentScript.getAttribute('data-color-discount');
@@ -71,8 +73,6 @@ styleBundles.textContent = `
     border-radius: 4px;
   }
 `;
-const loadBundles = ()=>{
-
 
 
 document.head.appendChild(styleBundles);
