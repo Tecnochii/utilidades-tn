@@ -71,6 +71,10 @@ styleBundles.textContent = `
     border-radius: 4px;
   }
 `;
+const loadBundles = ()=>{
+
+
+
 document.head.appendChild(styleBundles);
 
 
@@ -162,3 +166,13 @@ console.log( item.firstChild.value);
 
 wrapper.appendChild(list);
 containerBundle.appendChild(wrapper);
+
+
+}
+
+
+
+setTimeout(loadBundles, 3000);
+
+
+
