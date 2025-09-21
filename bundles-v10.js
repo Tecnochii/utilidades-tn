@@ -1,12 +1,14 @@
 
+const scriptEl = document.currentScript; // guardás referencia
 
-const colorBorder = document.currentScript.getAttribute('data-color-border');
 
-const colortDiscount = document.currentScript.getAttribute('data-color-discount');
+const colorBorder = scriptEl.getAttribute('data-color-border');
 
-const backgroundLabelColor = document.currentScript.getAttribute('data-background-label-color');
+const colortDiscount = scriptEl.getAttribute('data-color-discount');
 
-const bundleTitle = document.currentScript.getAttribute('data-bundle-title');
+const backgroundLabelColor = scriptEl.getAttribute('data-background-label-color');
+
+const bundleTitle = scriptEl.getAttribute('data-bundle-title');
 
 const loadBundles = ()=>{
 
@@ -87,7 +89,7 @@ const containerBundle = document.getElementsByClassName('price-container')[0];
 
 
 // Datos
-const discounts = JSON.parse(document.currentScript.getAttribute('data-discounts'));
+const discounts = JSON.parse(scriptEl.getAttribute('data-discounts'));
 
 
 console.log(discounts);
