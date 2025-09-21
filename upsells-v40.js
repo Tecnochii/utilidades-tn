@@ -17,7 +17,7 @@ const backgroundProductDiscount = document.currentScript.getAttribute('data-back
 const plusAddFontSize = document.currentScript.getAttribute('data-plus-add-font-size');
 const plusAddX = document.currentScript.getAttribute('data-plus-add-x'); // plusAddX
 const plusAddY = document.currentScript.getAttribute('data-plus-add-y');
-const plusAddBorder = document.currentScript.getAttribute('data-plus-add-border');
+// const plusAddBorder = document.currentScript.getAttribute('data-plus-add-border');
 const plusAddBackgroundColor = document.currentScript.getAttribute('data-plus-add-background-color');
 const plusAddColor = document.currentScript.getAttribute('data-plus-add-color');
 const plusAddBorderRadius = document.currentScript.getAttribute('data-plus-add-border-radius');
@@ -154,13 +154,14 @@ ${dataEnvioText ? ` <div style="display: flex;">
     width: ${plusAddWidth ? plusAddWidth : "3rem"};
     height: ${plusAddHeight ? plusAddHeight : "3rem"};
     border-radius: ${plusAddBorderRadius ? plusAddBorderRadius : "50%"};
-    color: ${plusAddColor ? plusAddColor : "green"};
-    background-color:${plusAddBackgroundColor ? plusAddBackgroundColor : "#ffffff3a"};
-    border: ${plusAddBorder ? plusAddBorder : "1px solid"};
+    color: ${plusAddColor ? plusAddColor : "#f7f7f7e6"};
+    background-color:${plusAddBackgroundColor ? plusAddBackgroundColor : "#6dc52a"};
+    
     position: relative;
-    top: ${plusAddY ? plusAddY : "-11rem"};
+    top: ${plusAddY ? plusAddY : "-9rem"};
     left: ${plusAddX ? plusAddX : "3rem"};
     font-size: ${plusAddFontSize ? plusAddFontSize : "35px"};
+    box-shadow: 2px 1px 2px black;
     text-align: center;
     display: flex;
     justify-content: center;
