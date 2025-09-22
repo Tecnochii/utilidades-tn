@@ -150,8 +150,8 @@ qtyInfo.style.display = 'flex';
   labelText.style.marginLeft = '8px';
 
 let divContainUnitAndsubTitle = document.createElement('div');
-divContainUnitAndsubTitle.style.display = 'flex';
-divContainUnitAndsubTitle.style.flexWrap = 'wrap';
+labelTextContainer.style.display = 'flex';
+labelTextContainer.style.flexWrap = 'wrap';
   divContainUnitAndsubTitle.appendChild(labelTextContainer);
   divContainUnitAndsubTitle.appendChild(subtitle);
   
