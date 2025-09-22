@@ -251,8 +251,8 @@ discounts.forEach((discount, index) => {
 
 
 
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[0].appendChild(selectvariant.cloneNode(true))
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[0].appendChild(selectvarianticon.cloneNode(true))
+document.getElementsByClassName("emapps-discount-radio-group-list-item")[3].appendChild(selectvariant.cloneNode(true))
+document.getElementsByClassName("emapps-discount-radio-group-list-item")[3].appendChild(selectvarianticon.cloneNode(true))
 
 
 });
