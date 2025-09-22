@@ -245,7 +245,7 @@ variantgroups.style.display = 'none'
 
 
 
-
+document.getElementsByClassName("emapps-discount-radio-group-list-item")[1].appendChild(selectvariant)
 
 
 discounts.forEach((discount, index) => {
