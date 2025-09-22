@@ -48,7 +48,7 @@ styleBundles.textContent = `
   }
   .emapps-discount-radio-group-list-item-active {
     border: 2px solid ${colorBorder ? colorBorder : '#8c52ff'};
-    box-shadow: 0 0 0 3px rgba(0, 200, 83, 0.2);
+    box-shadow: 0 0 0 3px #00000042;
   }
   .emapps-discount-radio-group-list-item-qty-info-unit {
     font-weight: bold;
