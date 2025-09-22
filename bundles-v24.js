@@ -217,6 +217,7 @@ let selectvariant = variantgroups.childNodes[1].childNodes[3]
 let selectvarianticon = variantgroups.childNodes[1].childNodes[4]
 
 
+console.log(selectvarianticon);
 
 
 if(variantgroups){
