@@ -167,8 +167,7 @@ divOfferContainer.style.justifyContent = 'space-between';
 divOfferContainer.style.width = '100%';
 
 
-divOfferContainer.appendChild(qtyInfo);
-divOfferContainer.appendChild(priceBox);
+
 
   const priceBox = document.createElement('div');
   const priceDe = document.createElement('div');
@@ -177,7 +176,8 @@ divOfferContainer.appendChild(priceBox);
   const pricePor = document.createElement('div');
   pricePor.className = 'emapps-discount-radio-group-list-item-qty-price-por';
   pricePor.textContent = `$${discount.priceFinal}`;
-
+divOfferContainer.appendChild(qtyInfo);
+divOfferContainer.appendChild(priceBox);
   priceBox.appendChild(priceDe);
   priceBox.appendChild(pricePor);
 
