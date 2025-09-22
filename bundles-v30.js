@@ -239,6 +239,8 @@ selectvarianticon.style.position = 'absolute'
 selectvarianticon.style.top = '4.4rem'
 selectvarianticon.style.left = '9rem'
 
+variantgroups.style.display = 'none'
+
 discounts.forEach((discount, index) => {
 
 
@@ -253,12 +255,13 @@ document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].
 
 });
 
+selectvariant.remove()
+selectvarianticon.remove()
 
 
 
 
 
-variantgroups.style.display = 'none'
 }
 
 
