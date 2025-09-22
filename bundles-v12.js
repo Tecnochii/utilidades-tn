@@ -123,12 +123,12 @@ discounts.forEach((discount, index) => {
   const unit = document.createElement('div');
   unit.className = 'emapps-discount-radio-group-list-item-qty-info-unit';
   unit.textContent = `${discount.name ? discount.name : discount.quantity + " " +"Unidad" + discount.quantity > 1 ? 'es' : ''}`;
-  const percent = document.createElement('div');
-  percent.className = 'emapps-discount-radio-group-list-item-qty-info-percent';
-  percent.textContent = `Ahorra ${discount.percent}%`;
+  const subtitle = document.createElement('div');
+  subtitle.className = 'emapps-discount-radio-group-list-item-qty-info-subtitle';
+  subtitle.textContent = `Ahorra ${discount.subtitle}%`;
 
   qtyInfo.appendChild(unit);
-  qtyInfo.appendChild(percent);
+  qtyInfo.appendChild(subtitle);
 
   const priceBox = document.createElement('div');
   const priceDe = document.createElement('div');
@@ -141,7 +141,7 @@ discounts.forEach((discount, index) => {
   priceBox.appendChild(priceDe);
   priceBox.appendChild(pricePor);
 
-  item.appendChild(radio);
+  qtyInfo.appendChild(radio);
   item.appendChild(qtyInfo);
   item.appendChild(priceBox);
 
