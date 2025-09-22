@@ -214,7 +214,7 @@ containerBundle.appendChild(wrapper);
 
 let variantgroups = document.getElementsByClassName("js-product-variants-group")[0]
 let selectvariant = variantgroups.childNodes[1].childNodes[3]
-let selectvarianticon = variantgroups.childNodes[1].childNodes[4]
+let selectvarianticon = variantgroups.childNodes[1].childNodes[5]
 
 
 console.log(variantgroups.childNodes[1].childNodes);
