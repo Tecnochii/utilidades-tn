@@ -212,6 +212,14 @@ wrapper.appendChild(list);
 containerBundle.appendChild(wrapper);
 
 
+
+
+
+
+
+
+
+
 let variantgroups = document.getElementsByClassName("js-product-variants-group")[0]
 let selectvariant = variantgroups.childNodes[1].childNodes[3]
 let selectvarianticon = variantgroups.childNodes[1].childNodes[5]
@@ -222,7 +230,6 @@ console.log(variantgroups.childNodes[1].childNodes);
 
 
 if(variantgroups){
-
 selectvariant.style.width = '50%'
 selectvariant.style.padding = '6px'
 selectvariant.style.borderRadius = '6px'
@@ -232,9 +239,24 @@ selectvarianticon.style.position = 'absolute'
 selectvarianticon.style.top = '4.4rem'
 selectvarianticon.style.left = '9rem'
 
+discounts.forEach((discount, index) => {
 
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[2].appendChild(selectvariant)
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[2].appendChild(selectvarianticon)
+
+
+
+
+
+
+document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant.cloneNode(true))
+document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon.cloneNode(true))
+
+
+});
+
+
+
+
+
 
 variantgroups.style.display = 'none'
 }
