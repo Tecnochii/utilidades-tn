@@ -25,7 +25,7 @@ const plusAddHeight = document.currentScript.getAttribute('data-plus-add-height'
 const plusAddWidth = document.currentScript.getAttribute('data-plus-add-width');
 const imgBorderRadius = document.currentScript.getAttribute('data-img-border-radius');
 const marginLeftProductDiscount = document.currentScript.getAttribute('data-margin-left-product-discount');
-
+const pulseButtonAnimation = document.currentScript.getAttribute('data-pulse-button-animation');
 
 
     console.log(JSON.parse(productsToUpssell));
@@ -149,7 +149,7 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
  justify-content: center;
 
-"><button class="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block"
+"><button class="${pulseButtonAnimation ? "pulse-button" : ""} js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big btn-block cart cart-upsell" type="submit" value="" data-store="product-buy-button" data-component="product.add-to-cart" data-prev-visibility="inline-block"
  style="    
     width: ${plusAddWidth ? plusAddWidth : "3rem"};
     height: ${plusAddHeight ? plusAddHeight : "3rem"};
