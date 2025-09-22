@@ -36,7 +36,7 @@ styleBundles.textContent = `
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 12px;
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
@@ -212,6 +212,12 @@ wrapper.appendChild(list);
 containerBundle.appendChild(wrapper);
 
 
+let variantgroups = document.getElementsByClassName("js-product-variants-group")[0]
+
+if(variantgroups){
+document.getElementsByClassName("emapps-discount-radio-group-list-item")[2].appendChild(variantgroups.childNodes[1].childNodes[3])
+variantgroups.style.display = 'none'
+}
 
 
 
