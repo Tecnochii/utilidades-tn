@@ -128,6 +128,7 @@ discounts.forEach((discount, index) => {
   subtitle.textContent = `Ahorra ${discount.subtitle}%`;
 
 
+qtyInfo.style.display = 'flex';
 
 
 
