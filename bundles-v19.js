@@ -161,10 +161,10 @@ qtyInfo.appendChild(divContainUnitAndsubTitle);
   const priceBox = document.createElement('div');
   const priceDe = document.createElement('div');
   priceDe.className = 'emapps-discount-radio-group-list-item-qty-price-de';
-  priceDe.textContent = `$ ${discount.priceOriginal}`;
+  priceDe.textContent = `$${discount.priceOriginal}`;
   const pricePor = document.createElement('div');
   pricePor.className = 'emapps-discount-radio-group-list-item-qty-price-por';
-  pricePor.textContent = `$ ${discount.priceFinal}`;
+  pricePor.textContent = `$${discount.priceFinal}`;
 
   priceBox.appendChild(priceDe);
   priceBox.appendChild(pricePor);
