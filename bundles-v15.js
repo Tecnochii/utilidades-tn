@@ -122,10 +122,10 @@ discounts.forEach((discount, index) => {
   const qtyInfo = document.createElement('div');
   const unit = document.createElement('div');
   unit.className = 'emapps-discount-radio-group-list-item-qty-info-unit';
-  unit.textContent = `${discount.name ? discount.name : discount.quantity + " " +"Unidad" + discount.quantity > 1 ? 'es' : ''}`;
+  unit.textContent = `${discount.name}`;
   const subtitle = document.createElement('div');
   subtitle.className = 'emapps-discount-radio-group-list-item-qty-info-subtitle';
-  subtitle.textContent = `Ahorra ${discount.subtitle}%`;
+  subtitle.textContent = ` ${discount.subtitle}`;
 
 
 qtyInfo.style.display = 'flex';
@@ -134,10 +134,24 @@ qtyInfo.style.display = 'flex';
 
   qtyInfo.appendChild(radio);
 
+  let labelTextContainer = document.createElement('div');
+  let labelText = document.createElement('p');
+  labelText.textContent = `${discount.labelText}`;
+  labelTextContainer.style.display = 'flex';
+
+
+  labelTextContainer.appendChild(unit);
+  labelTextContainer.appendChild(labelText);
+  
+  labelText.style.backgroundColor = `${backgroundLabelColor ? backgroundLabelColor : '#8c52ff'}`;
+  labelText.style.color = 'white';
+  labelText.style.padding = '4px 8px';
+  labelText.style.borderRadius = '4px';
+  labelText.style.marginLeft = '8px';
 
 let divContainUnitAndsubTitle = document.createElement('div');
 
-  divContainUnitAndsubTitle.appendChild(unit);
+  divContainUnitAndsubTitle.appendChild(labelTextContainer);
   divContainUnitAndsubTitle.appendChild(subtitle);
   
 qtyInfo.appendChild(divContainUnitAndsubTitle);
