@@ -243,16 +243,27 @@ selectvarianticon.style.left = '9rem'
 
 variantgroups.style.display = 'none'
 
+
+
+
+
+
 discounts.forEach((discount, index) => {
 
 
+
+
+
+  document.getElementsByClassName("emapps-discount-radio-group-list-item")[index],addEventListener('click', (e) => {
+    e.target.appendChild(selectvariant)
+ e.target.appendChild(selectvarianticon)
+  })
 
   
 
 
 
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant.cloneNode(true))
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon.cloneNode(true))
+
 
 
 });
