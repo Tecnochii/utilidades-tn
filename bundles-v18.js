@@ -148,10 +148,12 @@ qtyInfo.style.display = 'flex';
   labelText.style.padding = '4px 8px';
   labelText.style.borderRadius = '4px';
   labelText.style.marginLeft = '8px';
+  labelText.style.fontSize = '10px';
 
 let divContainUnitAndsubTitle = document.createElement('div');
 labelTextContainer.style.display = 'flex';
 labelTextContainer.style.flexWrap = 'wrap';
+labelTextContainer.style.alignItems = 'center';
   divContainUnitAndsubTitle.appendChild(labelTextContainer);
   divContainUnitAndsubTitle.appendChild(subtitle);
   
