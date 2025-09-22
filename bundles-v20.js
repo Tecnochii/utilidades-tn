@@ -158,6 +158,18 @@ labelTextContainer.style.alignItems = 'center';
   divContainUnitAndsubTitle.appendChild(subtitle);
   
 qtyInfo.appendChild(divContainUnitAndsubTitle);
+
+
+let divOfferContainer = document.createElement('div');
+divOfferContainer.style.display = 'flex';
+divOfferContainer.style.alignItems = 'center';
+divOfferContainer.style.justifyContent = 'space-between';
+divOfferContainer.style.width = '100%';
+
+
+divOfferContainer.appendChild(qtyInfo);
+divOfferContainer.appendChild(priceBox);
+
   const priceBox = document.createElement('div');
   const priceDe = document.createElement('div');
   priceDe.className = 'emapps-discount-radio-group-list-item-qty-price-de';
@@ -169,8 +181,8 @@ qtyInfo.appendChild(divContainUnitAndsubTitle);
   priceBox.appendChild(priceDe);
   priceBox.appendChild(pricePor);
 
-  item.appendChild(qtyInfo);
-  item.appendChild(priceBox);
+  item.appendChild(divOfferContainer);
+  // item.appendChild(priceBox);
 
   if (discount.default) {
     const badge = document.createElement('div');
@@ -198,6 +210,25 @@ console.log( item.firstChild.value);
 
 wrapper.appendChild(list);
 containerBundle.appendChild(wrapper);
+
+
+
+
+
+
+
+
+//Upsells
+let upsellContainer = containerBundle.parentNode 
+
+let upsellWrapper = document.createElement('div');
+upsellWrapper.className = 'emapps-discount-radio-group';
+
+
+upsellContainer.appendChild(upsellWrapper);
+
+
+
 
 
 }
