@@ -257,10 +257,14 @@ discounts.forEach((discount, index) => {
 
   document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].addEventListener('click', (e) => {
 
-    if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant){
+    if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant && index != 1){
       document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
  document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
+    }else if(index == 1 && document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant){
+      document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].removeChild(selectvariant)
+      document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].removeChild(selectvarianticon)
     }
+
 
     
   })
