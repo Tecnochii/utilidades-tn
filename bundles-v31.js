@@ -221,6 +221,8 @@ containerBundle.appendChild(wrapper);
 
 
 let variantgroups = document.getElementsByClassName("js-product-variants-group")[0]
+let variantgroups1 = document.getElementsByClassName("js-product-variants-group")[1]
+
 let selectvariant = variantgroups.childNodes[1].childNodes[3]
 let selectvarianticon = variantgroups.childNodes[1].childNodes[5]
 
@@ -240,7 +242,7 @@ selectvarianticon.style.top = '4.4rem'
 selectvarianticon.style.left = '9rem'
 
 variantgroups.style.display = 'none'
-
+variantgroups1.style.display = 'none'
 discounts.forEach((discount, index) => {
 
 
@@ -255,8 +257,7 @@ document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].
 
 });
 
-selectvariant.remove()
-selectvarianticon.remove()
+
 
 
 
