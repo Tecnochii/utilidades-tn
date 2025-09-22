@@ -127,9 +127,19 @@ discounts.forEach((discount, index) => {
   subtitle.className = 'emapps-discount-radio-group-list-item-qty-info-subtitle';
   subtitle.textContent = `Ahorra ${discount.subtitle}%`;
 
-  qtyInfo.appendChild(unit);
-  qtyInfo.appendChild(subtitle);
 
+
+
+
+  qtyInfo.appendChild(radio);
+
+
+let divContainUnitAndsubTitle = document.createElement('div');
+
+  divContainUnitAndsubTitle.appendChild(unit);
+  divContainUnitAndsubTitle.appendChild(subtitle);
+  
+qtyInfo.appendChild(divContainUnitAndsubTitle);
   const priceBox = document.createElement('div');
   const priceDe = document.createElement('div');
   priceDe.className = 'emapps-discount-radio-group-list-item-qty-price-de';
@@ -141,7 +151,6 @@ discounts.forEach((discount, index) => {
   priceBox.appendChild(priceDe);
   priceBox.appendChild(pricePor);
 
-  qtyInfo.appendChild(radio);
   item.appendChild(qtyInfo);
   item.appendChild(priceBox);
 
