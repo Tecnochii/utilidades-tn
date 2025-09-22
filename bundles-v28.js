@@ -225,13 +225,13 @@ if(variantgroups){
 
 selectvariant.style.width = '50%'
 selectvariant.style.padding = '6px'
-selectvariant.style.textAlign = 'center'
+selectvariant.style.borderRadius = '6px'
 
 
 selectvarianticon.style.position = 'absolute'
 selectvarianticon.style.top = '4.4rem'
 selectvarianticon.style.left = '9rem'
-selectvarianticon.style.borderRadius = '6px'
+
 
 document.getElementsByClassName("emapps-discount-radio-group-list-item")[2].appendChild(selectvariant)
 document.getElementsByClassName("emapps-discount-radio-group-list-item")[2].appendChild(selectvarianticon)
