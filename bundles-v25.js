@@ -220,6 +220,7 @@ let selectvarianticon = variantgroups.childNodes[1].childNodes[4]
 console.log(variantgroups.childNodes[1].childNodes);
 
 
+
 if(variantgroups){
 
 selectvariant.style.width = '50%'
