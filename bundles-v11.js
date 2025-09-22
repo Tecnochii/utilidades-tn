@@ -177,7 +177,7 @@ containerBundle.appendChild(wrapper);
 
 
 
-setTimeout(loadBundles, 3000);
+setTimeout(loadBundles, 0);
 
 
 
