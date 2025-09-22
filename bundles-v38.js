@@ -254,9 +254,9 @@ discounts.forEach((discount, index) => {
 
 
 
-  document.getElementsByClassName("emapps-discount-radio-group-list-item")[index],addEventListener('click', (e) => {
-    e.target.appendChild(selectvariant)
- e.target.appendChild(selectvarianticon)
+  document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].addEventListener('click', (e) => {
+    document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
+ document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
   })
 
   
