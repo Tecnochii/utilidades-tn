@@ -246,6 +246,7 @@ variantgroups.style.display = 'none'
 
 
 document.getElementsByClassName("emapps-discount-radio-group-list-item")[1].appendChild(selectvariant)
+ document.getElementsByClassName("emapps-discount-radio-group-list-item")[1].appendChild(selectvarianticon)
 
 
 discounts.forEach((discount, index) => {
@@ -255,8 +256,13 @@ discounts.forEach((discount, index) => {
 
 
   document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].addEventListener('click', (e) => {
-    document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
+
+    if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant){
+      document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
  document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
+    }
+
+    
   })
 
   
