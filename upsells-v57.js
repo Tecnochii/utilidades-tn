@@ -232,7 +232,7 @@ productsContainerClone.style.display= "justify-content: center";
 
 
 
-productsContainerClone.forEach((product, index) => {
+productsContainerClone.childNodes.forEach((product, index) => {
   product.style.background = "none";
 });
 
