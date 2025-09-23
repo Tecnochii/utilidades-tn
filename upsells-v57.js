@@ -233,7 +233,8 @@ productsContainerClone.style.display= "justify-content: center";
 
 
 productsContainerClone.childNodes.forEach((product, index) => {
-  product.style.background = "none";
+  console.log(product);
+  
 });
 
 
