@@ -247,44 +247,28 @@ variantgroups.style.display = 'none'
 
 
 
+
+
+
+
+
+// Itera sobre cada elemento de la lista de descuentos
 discounts.forEach((discount, index) => {
+    const listItem = document.getElementsByClassName("emapps-discount-radio-group-list-item")[index];
 
-
-
-
-  if(discount.default== true){
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
- document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
-}
-
-
-console.log(discount.default);
-
-
-  document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].addEventListener('click', (e) => {
-
-    if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant){
-document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
- document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
-  }else if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant && discount.default != true){
-      document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
- document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
-    }else if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[2] != selectvariant){
-      document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
-      document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
+    // Agrega los elementos a la opción por defecto al cargar la página
+    if (discount.default === true) {
+        listItem.appendChild(selectvariant);
+        listItem.appendChild(selectvarianticon);
     }
 
-
-    
-  })
-
-  
-
-
-
-
-
-
+    // Agrega el evento de clic a cada elemento de la lista
+    listItem.addEventListener('click', () => {
+        // Mueve los elementos a la nueva ubicación al hacer clic
+        // No necesitas clonar ni verificar, appendChild los moverá automáticamente
+        listItem.appendChild(selectvariant);
+        listItem.appendChild(selectvarianticon);
+    });
 });
 
 
