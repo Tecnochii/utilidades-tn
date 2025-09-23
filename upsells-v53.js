@@ -226,9 +226,7 @@ upsellWrapper.className = "upsell-container";
 let wrapperClone = upsellWrapper.cloneNode(true);
 
 
-wrapperClone.style.border = "1px solid grey";
-wrapperClone.style.backgroundColor = "inherit";
-wrapperClone.style.height = "38vh";
+
 
 
 
