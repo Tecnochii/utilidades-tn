@@ -217,25 +217,21 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 
 //Upsells
-let upsellContainer = document.getElementsByClassName("price-container")[0].parentNode;
+setTimeout(() => {
+  let upsellContainer = document.getElementsByClassName("price-container")[0].parentNode;
 
 let upsellWrapper = document.createElement('div');
 upsellWrapper.className = "upsell-container";
 
 
 let wrapperClone = upsellWrapper.cloneNode(true);
-
-
-
-
-
-
    
 upsellWrapper.appendChild(title.cloneNode(true));
 upsellWrapper.appendChild(wrapperClone);
 
 
 upsellContainer.appendChild(upsellWrapper);
+}, 2000);
 
 
 
