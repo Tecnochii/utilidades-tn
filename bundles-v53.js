@@ -264,6 +264,13 @@ discounts.forEach((discount, index) => {
 
     // Agrega el evento de clic a cada elemento de la lista
     listItem.addEventListener('click', () => {
+
+
+  if (listItem.contains(selectvariant)) {
+            // Si ya está, no hagas nada
+            return;
+        }
+
         // Mueve los elementos a la nueva ubicación al hacer clic
         // No necesitas clonar ni verificar, appendChild los moverá automáticamente
         listItem.appendChild(selectvariant);
