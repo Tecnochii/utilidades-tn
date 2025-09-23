@@ -200,8 +200,8 @@ divOfferContainer.appendChild(priceBox);
     radio.checked = true;
 
 
-console.log( item.firstChild);
-    document.getElementsByClassName('js-quantity-input')[0].value = item.firstChild.value;
+console.log( item.firstChild.firstChild.firstChild.value);
+    document.getElementsByClassName('js-quantity-input')[0].value = item.firstChild.firstChild.firstChild.value;
 
   });
 
