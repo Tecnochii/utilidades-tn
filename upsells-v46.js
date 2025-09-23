@@ -211,6 +211,23 @@ ${dataEnvioText ? ` <div style="display: flex;">
   // Auto scroll cada 5 segundos
 
   let contadorSegundos = 0;
+
+
+
+
+
+//Upsells
+let upsellContainer = document.getElementsByClassName("price-container")[0].parentNode;
+
+let upsellWrapper = document.createElement('div');
+upsellWrapper.className = "upsell-container";
+
+
+upsellContainer.appendChild(upsellWrapper);
+
+
+
+
 };
 
 setTimeout(() => {

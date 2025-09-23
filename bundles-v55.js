@@ -291,14 +291,7 @@ discounts.forEach((discount, index) => {
 
 
 
-//Upsells
-let upsellContainer = containerBundle.parentNode 
 
-let upsellWrapper = document.createElement('div');
-upsellWrapper.className = 'emapps-discount-radio-group';
-
-
-upsellContainer.appendChild(upsellWrapper);
 
 
 
