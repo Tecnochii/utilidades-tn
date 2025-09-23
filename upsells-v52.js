@@ -227,7 +227,7 @@ let wrapperClone = upsellWrapper.cloneNode(true);
 
 
 wrapperClone.style.border = "1px solid grey";
-wrapperClone.style.background = "none"
+wrapperClone.style.backgroundColor = "inherit";
 wrapperClone.style.height = "38vh";
 
 
