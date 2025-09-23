@@ -233,7 +233,7 @@ wrapperClone.display = "flex";
 wrapperClone.alignItems = "center";
 wrapperClone.justifyContent = "center";
 
-wrapperClone.childNodes[1].style.gap = "1rem"
+
    
 upsellWrapper.appendChild(title.cloneNode(true));
 upsellWrapper.appendChild(wrapperClone);
