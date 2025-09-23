@@ -263,7 +263,10 @@ console.log(discount.default);
 
   document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].addEventListener('click', (e) => {
 
-    if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant && discount.default != true){
+    if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant){
+document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
+ document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
+  }else if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[1] != selectvariant && discount.default != true){
       document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvariant)
  document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].appendChild(selectvarianticon)
     }else if(document.getElementsByClassName("emapps-discount-radio-group-list-item")[index].childNodes[2] != selectvariant){
