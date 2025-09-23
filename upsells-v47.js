@@ -223,6 +223,11 @@ let upsellWrapper = document.createElement('div');
 upsellWrapper.className = "upsell-container";
 
 
+
+upsellWrapper.appendChild(title.cloneNode(true));
+upsellWrapper.appendChild(wrapper.cloneNode(true));
+
+
 upsellContainer.appendChild(upsellWrapper);
 
 
