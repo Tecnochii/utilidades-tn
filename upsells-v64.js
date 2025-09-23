@@ -26,7 +26,7 @@ const plusAddWidth = document.currentScript.getAttribute('data-plus-add-width');
 const imgBorderRadius = document.currentScript.getAttribute('data-img-border-radius');
 const marginLeftProductDiscount = document.currentScript.getAttribute('data-margin-left-product-discount');
 const pulseButtonAnimation = document.currentScript.getAttribute('data-pulse-button-animation');
-
+const upsellBelow = document.currentScript.getAttribute('data-upsell-below');
 
     console.log(JSON.parse(productsToUpssell));
     
@@ -217,7 +217,14 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 
 //Upsells
-let upsellContainer = document.getElementsByClassName("price-container")[0].parentNode;
+
+
+if(upsellBelow){
+  
+
+
+
+  let upsellContainer = document.getElementsByClassName("price-container")[0].parentNode;
 
 let upsellWrapper = document.createElement('div');
 upsellWrapper.className = "upsell-container";
@@ -244,6 +251,7 @@ upsellWrapper.appendChild(wrapperClone);
 
 
 upsellContainer.appendChild(upsellWrapper);
+}
 
 
 
