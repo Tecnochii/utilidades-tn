@@ -225,7 +225,7 @@ upsellWrapper.className = "upsell-container";
 
 let wrapperClone = wrapper.cloneNode(true);
 
-let productsContainerClone = wrapperClone.childNodes[0]
+let productsContainerClone = wrapperClone.childNodes[1]
 
 productsContainerClone.style.display= "flex";
 productsContainerClone.style.display= "justify-content: center";
