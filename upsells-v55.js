@@ -217,21 +217,29 @@ ${dataEnvioText ? ` <div style="display: flex;">
 
 
 //Upsells
-setTimeout(() => {
-  let upsellContainer = document.getElementsByClassName("price-container")[0].parentNode;
+let upsellContainer = document.getElementsByClassName("price-container")[0].parentNode;
 
 let upsellWrapper = document.createElement('div');
 upsellWrapper.className = "upsell-container";
 
 
-let wrapperClone = upsellWrapper.cloneNode(true);
+let wrapperClone = wrapper.cloneNode(true);
+
+
+wrapperClone.style.border = "1px solid grey";
+wrapperClone.style.background = "none"
+wrapperClone.style.height = "38vh";
+wrapperClone.display = "flex";
+wrapperClone.alignItems = "center";
+wrapperClone.justifyContent = "center";
+
+
    
 upsellWrapper.appendChild(title.cloneNode(true));
 upsellWrapper.appendChild(wrapperClone);
 
 
 upsellContainer.appendChild(upsellWrapper);
-}, 2000);
 
 
 
