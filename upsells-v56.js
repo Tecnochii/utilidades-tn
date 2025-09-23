@@ -225,13 +225,17 @@ upsellWrapper.className = "upsell-container";
 
 let wrapperClone = wrapper.cloneNode(true);
 
+let productsContainerClone = wrapperClone.childNodes[0]
 
-wrapperClone.style.border = "1px solid grey";
-wrapperClone.style.background = "none"
-wrapperClone.style.height = "38vh";
-wrapperClone.display = "flex";
-wrapperClone.alignItems = "center";
-wrapperClone.justifyContent = "center";
+productsContainerClone.style.display= "flex";
+productsContainerClone.style.display= "justify-content: center";
+
+
+
+productsContainerClone.forEach((product, index) => {
+  product.style.background = "none";
+});
+
 
 
    
