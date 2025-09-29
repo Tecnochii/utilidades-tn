@@ -10,6 +10,8 @@ const backgroundLabelColor = scriptEl.getAttribute('data-background-label-color'
 
 const bundleTitle = scriptEl.getAttribute('data-bundle-title');
 
+const variantsOn = scriptEl.getAttribute('data-variants-on');
+
 const loadBundles = ()=>{
 
 
@@ -220,7 +222,8 @@ containerBundle.appendChild(wrapper);
 
 
 
-let variantgroups = document.getElementsByClassName("js-product-variants-group")[0]
+if(variantsOn == true){
+  let variantgroups = document.getElementsByClassName("js-product-variants-group")[0]
 
 
 let selectvariant = variantgroups.childNodes[1].childNodes[3]
@@ -279,6 +282,7 @@ discounts.forEach((discount, index) => {
 });
 
 
+}
 
 
 
